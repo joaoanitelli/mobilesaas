@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="shortcut icon" href="assets/images/imobi.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="bg-fake">
+            <div class="sphere-background"></div>
+            <div class="sphere-background-secondary"></div>
+        </div>
+        <nav class="nav container">
+            <img class="image-nav nav-logo" src="assets/images/logo.jpeg">
+            <ul class="nav-ul">
+                <li class="btn-search"><svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960"
+                        width="44px" fill="#FFFFFF">
+                        <path
+                            d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+                    <div class="search">
+                        <input type="text" autofocus placeholder="Pesquisar...">
+
+                        <div class="shortcut-search">
+                            <p class="title-shortcurt">Atalhos</p>
+                            <div class="btns-shortcut">
+                                <div class="button-shortcut">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                        width="60px" fill="#40D07E">
+                                        <path
+                                            d="M160-120v-80h640v80H160Zm160-160q-66 0-113-47t-47-113v-400h640q33 0 56.5 23.5T880-760v120q0 33-23.5 56.5T800-560h-80v120q0 66-47 113t-113 47H320Zm0-80h240q33 0 56.5-23.5T640-440v-320H240v320q0 33 23.5 56.5T320-360Zm400-280h80v-120h-80v120ZM320-360h-80 400-320Z" />
+                                    </svg>
+                                    <p>Fazer<br>Pedido</p>
+                                </div>
+                                <div class="button-shortcut ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                        width="60px" fill="#40D07E">
+                                        <path
+                                            d="M240-399.33h315.33V-466H240v66.67ZM240-526h480v-66.67H240V-526Zm0-126.67h480v-66.66H240v66.66ZM80-80v-733.33q0-27 19.83-46.84Q119.67-880 146.67-880h666.66q27 0 46.84 19.83Q880-840.33 880-813.33v506.66q0 27-19.83 46.84Q840.33-240 813.33-240H240L80-80Zm131.33-226.67h602v-506.66H146.67v575l64.66-68.34Zm-64.66 0v-506.66 506.66Z" />
+                                    </svg>
+                                    <p>Mensagens</p>
+                                </div>
+                                <div class="button-shortcut ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                        width="60px" fill="#40D07E">
+                                        <path
+                                            d="M228-80q-45.83 0-77.92-32.08Q118-144.17 118-190v-123.33h124.67V-880l59.86 60 59.87-60 59.87 60 59.86-60L542-820l60-60 60 60 60-60 60 60 60-60v690q0 45.83-32.08 77.92Q777.83-80 732-80H228Zm504-66.67q19 0 31.17-12.16Q775.33-171 775.33-190v-583.33h-466v460h379.34V-190q0 19 12.16 31.17Q713-146.67 732-146.67Zm-374-468v-66.66h240v66.66H358Zm0 129.34V-552h240v66.67H358Zm328.67-129.34q-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5t9.84-23.5q9.83-9.83 23.5-9.83 13.66 0 23.5 9.83Q720-661.67 720-648t-9.83 23.5q-9.84 9.83-23.5 9.83Zm0 126q-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5t9.84-23.5q9.83-9.83 23.5-9.83 13.66 0 23.5 9.83Q720-535.67 720-522t-9.83 23.5q-9.84 9.83-23.5 9.83Zm-459.34 342H622v-100H184.67V-190q0 19 12.26 31.17 12.27 12.16 30.4 12.16Zm-42.66 0v-100 100Z" />
+                                    </svg>
+                                    <p>Melhores<br>Sabores</p>
+                                </div>
+                            </div>
+                            <div class="btns-shortcut">
+                                <div class="button-shortcut ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                        width="60px" fill="#40D07E">
+                                        <path
+                                            d="M200.67-160v-383.33L80-451.33 40-504l440-336 172 131.33V-800h106.67v172.67L920-504l-40.67 52.67L758.67-544v384h-232v-240h-93.34v240H200.67Zm66.66-66.67h99.34v-240h226.66v240H692v-367.66l-212-162-212.67 162v367.66Zm129.34-339.66h166.66q0-32.67-25-53.84-25-21.16-58.33-21.16t-58.33 21.06q-25 21.06-25 53.94Zm-30 339.66v-240h226.66v240-240H366.67v240Z" />
+                                    </svg>
+                                    <p>Perto<br>de você</p>
+                                </div>
+                                <div class="button-shortcut ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                        width="60px" fill="#40D07E">
+                                        <path
+                                            d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                                    </svg>
+                                    <p>Configurações</p>
+                                </div>
+                                <div class="button-shortcut ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                        width="60px" fill="#40D07E">
+                                        <path
+                                            d="M477.28-240q21.96 0 37.3-15.34 15.33-15.33 15.33-37.32 0-21.99-15.33-37.18-15.34-15.18-37.3-15.18-21.95 0-37.29 15.18-15.34 15.19-15.34 37.18 0 21.99 15.34 37.32Q455.33-240 477.28-240Zm-38.63-154h78.78q0-32.04 7.62-51.28 7.62-19.24 41.43-51.29 25.28-25.04 40.16-48.91 14.88-23.87 14.88-57.39 0-56.89-40.52-87.25t-96.52-30.36q-57.96 0-94.65 31.2-36.7 31.19-51.18 74.63l71.26 27.67q5.48-18.48 22.38-39.24 16.91-20.76 50.99-20.76 29.13 0 43.94 16.31 14.8 16.3 14.8 35.87 0 18.8-11.64 35.94-11.64 17.14-27.97 30.71-43.04 38.52-53.4 59.36-10.36 20.83-10.36 74.79ZM480-71.87q-84.91 0-159.34-32.12-74.44-32.12-129.5-87.17-55.05-55.06-87.17-129.5Q71.87-395.09 71.87-480t32.12-159.34q32.12-74.44 87.17-129.5 55.06-55.05 129.5-87.17 74.43-32.12 159.34-32.12t159.34 32.12q74.44 32.12 129.5 87.17 55.05 55.06 87.17 129.5 32.12 74.43 32.12 159.34t-32.12 159.34q-32.12 74.44-87.17 129.5-55.06 55.05-129.5 87.17Q564.91-71.87 480-71.87Zm0-91q133.04 0 225.09-92.04 92.04-92.05 92.04-225.09 0-133.04-92.04-225.09-92.05-92.04-225.09-92.04-133.04 0-225.09 92.04-92.04 92.05-92.04 225.09 0 133.04 92.04 225.09 92.05 92.04 225.09 92.04ZM480-480Z" />
+                                    </svg>
+                                    <p>Ajuda</p>
+                                </div>
+                            </div>
+                            <p class="contact-us">Está com problemas técnicos?<br><a>Entre em contato.</a></p>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="btn-notification">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px"
+                        fill="#FFFFFF">
+                        <path
+                            d="M160-200v-80h80v-280q0-83 50-147.5T420-792v-28q0-25 17.5-42.5T480-880q25 0 42.5 17.5T540-820v28q80 20 130 84.5T720-560v280h80v80H160ZM480-80q-33 0-56.5-23.5T400-160h160q0 33-23.5 56.5T480-80Z" />
+                    </svg>
+                    <div class="mini-pop-up-notificacao">
+                        <p>1</p>
+                    </div>
+                    <div class="notification">
+
+                        <div class="notification-header">
+                            <p class="n-header-title">Notificações</p>
+                            <p class="n-header-read">Marcar como lido</p>
+                        </div>
+                        <div class="notification-chat view">
+                            <div class="notification-chat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                    width="60px" fill="#40D07E">
+                                    <path
+                                        d="M240-399.33h315.33V-466H240v66.67ZM240-526h480v-66.67H240V-526Zm0-126.67h480v-66.66H240v66.66ZM80-80v-733.33q0-27 19.83-46.84Q119.67-880 146.67-880h666.66q27 0 46.84 19.83Q880-840.33 880-813.33v506.66q0 27-19.83 46.84Q840.33-240 813.33-240H240L80-80Zm131.33-226.67h602v-506.66H146.67v575l64.66-68.34Zm-64.66 0v-506.66 506.66Z" />
+                                </svg>
+                            </div>
+                            <div class="notification-chat-text">
+                                <p>Mensagens</p>
+                                <p><span>Você tem</span> 1 nova mensagem!</p>
+                                <p class="date">Hoje</p>
+                            </div>
+                        </div>
+                        <div class="notification-chat">
+                            <div class="notification-chat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                    width="60px" fill="#40D07E">
+                                    <path
+                                        d="M358.54-293.46 480-366.59l121.46 74.13-32.05-138.5 107.18-92.65-140.74-12.52L480-667.11l-55.85 130.22-140.74 12.28 107.18 93.41-32.05 137.74ZM221.04-103.5l68.35-294.63L60.63-596.46l301.87-25.95L480-900.33l117.5 277.92 301.87 25.95-228.76 198.33 68.35 294.63L480-259.91 221.04-103.5ZM480-469.28Z" />
+                                </svg>
+                            </div>
+                            <div class="notification-chat-text">
+                                <p>Novidades</p>
+                                <p><span>Agora tem </span>1 Starbucks pertinho de você!.</p>
+                                <p class="date">3 dias atrás</p>
+                            </div>
+                        </div>
+                        <div class="notification-chat">
+                            <div class="notification-chat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                    width="60px" fill="#40D07E">
+                                    <path
+                                        d="M240-399.33h315.33V-466H240v66.67ZM240-526h480v-66.67H240V-526Zm0-126.67h480v-66.66H240v66.66ZM80-80v-733.33q0-27 19.83-46.84Q119.67-880 146.67-880h666.66q27 0 46.84 19.83Q880-840.33 880-813.33v506.66q0 27-19.83 46.84Q840.33-240 813.33-240H240L80-80Zm131.33-226.67h602v-506.66H146.67v575l64.66-68.34Zm-64.66 0v-506.66 506.66Z" />
+                                </svg>
+                            </div>
+                            <div class="notification-chat-text">
+                                <p>Mensagens</p>
+                                <p><span>Você tem</span> 1 nova mensagem!</p>
+                                <p class="date">1 semana atrás</p>
+                            </div>
+                        </div>
+                        <div class="notification-chat">
+                            <div class="notification-chat-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="60px" viewBox="0 -960 960 960"
+                                    width="60px" fill="#40D07E">
+                                    <path
+                                        d="M240-399.33h315.33V-466H240v66.67ZM240-526h480v-66.67H240V-526Zm0-126.67h480v-66.66H240v66.66ZM80-80v-733.33q0-27 19.83-46.84Q119.67-880 146.67-880h666.66q27 0 46.84 19.83Q880-840.33 880-813.33v506.66q0 27-19.83 46.84Q840.33-240 813.33-240H240L80-80Zm131.33-226.67h602v-506.66H146.67v575l64.66-68.34Zm-64.66 0v-506.66 506.66Z" />
+                                </svg>
+                            </div>
+                            <div class="notification-chat-text">
+                                <p>Mensagens</p>
+                                <p><span>Você tem</span> 3 novas mensagens!</p>
+                                <p class="date">2 meses atrás</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li><img class="image-nav nav-perfil" src="assets/images/perfil.jpeg"></li>
+                <li class="btn-mobile">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                        fill="#FFFFFF">
+                        <path d="M120-240v-80h240v80H120Zm0-200v-80h480v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="overlay"></div>
+    <div class="drawer">
+        <div class="header-drawer">
+            <div class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" height="22px" viewBox="0 -960 960 960" width="22px"
+                    fill="#40D07E">
+                    <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+                </svg>
+            </div>
+            <h1>Starbucks</h1>
+        </div>
+        <ul class="menu-mobile">
+            <li class="menu-item">
+                <a class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#40D07E">
+                        <path
+                            d="M160-120v-80h640v80H160Zm160-160q-66 0-113-47t-47-113v-400h640q33 0 56.5 23.5T880-760v120q0 33-23.5 56.5T800-560h-80v120q0 66-47 113t-113 47H320Zm0-80h240q33 0 56.5-23.5T640-440v-320H240v320q0 33 23.5 56.5T320-360Zm400-280h80v-120h-80v120ZM320-360h-80 400-320Z" />
+                    </svg>
+                    <p>Fazer Pedido</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#40D07E">
+                        <path
+                            d="M240-399.33h315.33V-466H240v66.67ZM240-526h480v-66.67H240V-526Zm0-126.67h480v-66.66H240v66.66ZM80-80v-733.33q0-27 19.83-46.84Q119.67-880 146.67-880h666.66q27 0 46.84 19.83Q880-840.33 880-813.33v506.66q0 27-19.83 46.84Q840.33-240 813.33-240H240L80-80Zm131.33-226.67h602v-506.66H146.67v575l64.66-68.34Zm-64.66 0v-506.66 506.66Z" />
+                    </svg>
+                    <p>Mensagens</p>
+                </a>
+            </li>
+            <li class="menu-item dropdown-btn">
+                <a class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#40D07E">
+                        <path
+                            d="M200.67-160v-383.33L80-451.33 40-504l440-336 172 131.33V-800h106.67v172.67L920-504l-40.67 52.67L758.67-544v384h-232v-240h-93.34v240H200.67Zm66.66-66.67h99.34v-240h226.66v240H692v-367.66l-212-162-212.67 162v367.66Zm129.34-339.66h166.66q0-32.67-25-53.84-25-21.16-58.33-21.16t-58.33 21.06q-25 21.06-25 53.94Zm-30 339.66v-240h226.66v240-240H366.67v240Z" />
+                    </svg>
+                    <p>Unidades</p>
+                    <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960"
+                        width="32px" fill="#40D07E">
+                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                    </svg>
+                </a>
+                <ul class="dropdown-content dropdown">
+                    <li><a
+                            href="https://www.band.uol.com.br/esportes/automobilismo/formula-1/ao-vivo/gp-de-monaco-de-f1-ao-vivo">Cidade
+                            do Cabo</a></li>
+                    <li><a>Los Angeles</a></li>
+                    <li><a>Milão</a></li>
+                    <li><a>Paris</a></li>
+                    <li><a>São Paulo</a></li>
+                    <li><a>Sidney</a></li>
+                    <li><a>Tokyo</a></li>
+                </ul>
+            </li>
+            <li class="menu-item dropdown-btn">
+                <a class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#40D07E">
+                        <path
+                            d="M228-80q-45.83 0-77.92-32.08Q118-144.17 118-190v-123.33h124.67V-880l59.86 60 59.87-60 59.87 60 59.86-60L542-820l60-60 60 60 60-60 60 60 60-60v690q0 45.83-32.08 77.92Q777.83-80 732-80H228Zm504-66.67q19 0 31.17-12.16Q775.33-171 775.33-190v-583.33h-466v460h379.34V-190q0 19 12.16 31.17Q713-146.67 732-146.67Zm-374-468v-66.66h240v66.66H358Zm0 129.34V-552h240v66.67H358Zm328.67-129.34q-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5t9.84-23.5q9.83-9.83 23.5-9.83 13.66 0 23.5 9.83Q720-661.67 720-648t-9.83 23.5q-9.84 9.83-23.5 9.83Zm0 126q-13.67 0-23.5-9.83-9.84-9.83-9.84-23.5t9.84-23.5q9.83-9.83 23.5-9.83 13.66 0 23.5 9.83Q720-535.67 720-522t-9.83 23.5q-9.84 9.83-23.5 9.83Zm-459.34 342H622v-100H184.67V-190q0 19 12.26 31.17 12.27 12.16 30.4 12.16Zm-42.66 0v-100 100Z" />
+                    </svg>
+                    <p>Relatórios</p>
+                    <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960"
+                        width="32px" fill="#40D07E">
+                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                    </svg>
+                </a>
+                <ul class="dropdown-content dropdown">
+                    <li><a>Mais Pedidos</a></li>
+                    <li><a>Melhores Sabores</a></li>
+                    <li><a>Modo de Preparo</a></li>
+                </ul>
+            </li>
+            <li class="menu-item dropdown-btn">
+                <a class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#40D07E">
+                        <path
+                            d="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm70-80h79l14-106q31-8 57.5-23.5T639-327l99 41 39-68-86-65q5-14 7-29.5t2-31.5q0-16-2-31.5t-7-29.5l86-65-39-68-99 42q-22-23-48.5-38.5T533-694l-13-106h-79l-14 106q-31 8-57.5 23.5T321-633l-99-41-39 68 86 64q-5 15-7 30t-2 32q0 16 2 31t7 30l-86 65 39 68 99-42q22 23 48.5 38.5T427-266l13 106Zm42-180q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Zm-2-140Z" />
+                    </svg>
+                    <p>Configurações</p>
+                    <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960"
+                        width="32px" fill="#40D07E">
+                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                    </svg>
+                </a>
+                <ul class="dropdown-content dropdown">
+                    <li><a>Configurações Gerais</a></li>
+                    <li><a>Notificações</a></li>
+                    <li><a>Seu Perfil</a></li>
+                </ul>
+            </li>
+            <li class="menu-item dropdown-btn">
+                <a class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#40D07E">
+                        <path
+                            d="M480-401.43 32.35-645.02 480-888.37l447.65 243.35L480-401.43Zm0 164.78L55.59-467.48l90.21-52.45L480-337.7l334.43-182.23 90.22 52.45L480-236.65Zm0 164.78L55.59-302.46l90.21-52.45 334.2 182 334.43-182 90.22 52.45L480-71.87Zm0-430.37 261.76-142.54L480-787.57 218.48-644.78 480-502.24Zm.24-142.78Z" />
+                    </svg>
+                    <p>Módulos</p>
+                    <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960"
+                        width="32px" fill="#40D07E">
+                        <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+                    </svg>
+                </a>
+                <ul class="dropdown-content dropdown">
+                    <li><a>Agenda do Café</a></li>
+                    <li><a>Sorteios</a></li>
+                    <li><a>Sugerir Sabores</a></li>
+                </ul>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#40D07E">
+                        <path
+                            d="M358.54-293.46 480-366.59l121.46 74.13-32.05-138.5 107.18-92.65-140.74-12.52L480-667.11l-55.85 130.22-140.74 12.28 107.18 93.41-32.05 137.74ZM221.04-103.5l68.35-294.63L60.63-596.46l301.87-25.95L480-900.33l117.5 277.92 301.87 25.95-228.76 198.33 68.35 294.63L480-259.91 221.04-103.5ZM480-469.28Z" />
+                    </svg>
+                    <p>Novidades</p>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a class="menu-link">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#40D07E">
+                        <path
+                            d="M477.28-240q21.96 0 37.3-15.34 15.33-15.33 15.33-37.32 0-21.99-15.33-37.18-15.34-15.18-37.3-15.18-21.95 0-37.29 15.18-15.34 15.19-15.34 37.18 0 21.99 15.34 37.32Q455.33-240 477.28-240Zm-38.63-154h78.78q0-32.04 7.62-51.28 7.62-19.24 41.43-51.29 25.28-25.04 40.16-48.91 14.88-23.87 14.88-57.39 0-56.89-40.52-87.25t-96.52-30.36q-57.96 0-94.65 31.2-36.7 31.19-51.18 74.63l71.26 27.67q5.48-18.48 22.38-39.24 16.91-20.76 50.99-20.76 29.13 0 43.94 16.31 14.8 16.3 14.8 35.87 0 18.8-11.64 35.94-11.64 17.14-27.97 30.71-43.04 38.52-53.4 59.36-10.36 20.83-10.36 74.79ZM480-71.87q-84.91 0-159.34-32.12-74.44-32.12-129.5-87.17-55.05-55.06-87.17-129.5Q71.87-395.09 71.87-480t32.12-159.34q32.12-74.44 87.17-129.5 55.06-55.05 129.5-87.17 74.43-32.12 159.34-32.12t159.34 32.12q74.44 32.12 129.5 87.17 55.05 55.06 87.17 129.5 32.12 74.43 32.12 159.34t-32.12 159.34q-32.12 74.44-87.17 129.5-55.06 55.05-129.5 87.17Q564.91-71.87 480-71.87Zm0-91q133.04 0 225.09-92.04 92.04-92.05 92.04-225.09 0-133.04-92.04-225.09-92.05-92.04-225.09-92.04-133.04 0-225.09 92.04-92.04 92.05-92.04 225.09 0 133.04 92.04 225.09 92.05 92.04 225.09 92.04ZM480-480Z" />
+                    </svg>
+                    <p>Ajuda</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
